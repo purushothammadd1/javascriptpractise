@@ -1,0 +1,13 @@
+var student ={
+    name:"krishna",
+    gender:"male",
+    phonenumber:9780256783
+};
+console.log(student);
+student.email ="krishna@gmail.com";
+student.city ="Gachibowli";
+console.log(student);
+//update the property syntax is similar to insert
+//objectname>.<property key value> ="new value";
+student.phonenumber=9396457328
+console.log(student);
