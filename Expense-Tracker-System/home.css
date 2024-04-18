@@ -1,0 +1,109 @@
+/* CSS Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.animated-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.animated-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #0088ff, #ff8888, #88ff88);
+    z-index: -1;
+    animation: animatedBackground 10s ease infinite;
+}
+
+@keyframes animatedBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 0; }
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1;
+}
+
+.nav-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.li-a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h1, h2 {
+    text-align: center;
+    z-index: 1;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.expense-form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.expense-form input[type="text"],
+.expense-form input[type="number"],
+.expense-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.expense-form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.expense-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.expense-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.expense-item .amount {
+    float: right;
+}

@@ -1,0 +1,12 @@
+*{  margin: 10;
+    padding: 1%;
+    border: 10;
+}
+.survey-form{
+    justify-content: center;
+   
+}
+.fname{
+    margin: 0;
+    display: flexbox;
+}

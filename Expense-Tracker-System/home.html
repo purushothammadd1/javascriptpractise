@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <nav>
+        <ul class="nav-ul">
+            <li class="nav-li"><a href="./home.html" class="li-a">HOME</a></li>
+            <li class="nav-li"><a href="./ai.html" class="li-a">AI</a></li>
+            <li class="nav-li"><a href="./tax.html" class="li-a">TAX</a></li>
+        </ul>
+    </nav>
+    <h1 > WELCOME TO HOME SECTION </h1>
+    <h2>EXPENSE TRACKER</h2>
+    <main>
+        <section class="section-income">
+            <p class="balance">
+                Total Income :
+            </p>
+            <p id="income">0</p>
+        </section>
+        <section class="section-income">
+            <p class="balance">
+                Total Expense :
+            </p>
+            <p id="expenses">0</p>
+
+        </section>
+        <section class="selection-income">
+            <p>Total Savings :</p>
+            <p>0</p>
+        </section>
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="Add a New Todo...">
+            <input type="number" id="todo-num" placeholder="Enter a Value">
+            <select name="" id="todo-select">
+                <option value="income">Income</option>
+                <option value="expence">Expenses</option>
+            </select>
+            <button type="submit">ADD</button>
+        </form>
+        <ul id="todo-list"></ul>
+    </main>
+    <script src="./homescript.js"></script>
+</body>
+</html>

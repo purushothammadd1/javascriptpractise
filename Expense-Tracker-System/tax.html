@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Page</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+     <!-- NAVBAR HERE -->
+     <nav>
+
+        <ul class="nav-ul">
+            <li class="nav-li" > <a href="./home.html" class="li-a">HOME</a></li>
+            <li class="nav-li"><a href="./ai.html" class="li-a">AI</a></li>
+            <li class="nav-li"><a class="li-a" href="./tax.html">TAX</a></li>
+        </ul>
+    </nav>
+    
+
+        <select name="" id="select-tax">
+
+            <option value="new-regime">NEW REGIME</option>
+            <option value="old-regime">OLD REGIME</option>
+        </select>
+           <button  onclick="displayTax()">
+            calculate
+           </button>
+ <p id="value"></p>
+
+    <script src="./homescript.js"></script>
+</body>
+</html>
